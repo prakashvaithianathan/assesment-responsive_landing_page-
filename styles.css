@@ -1,0 +1,223 @@
+:root{
+    --primaryFont:'Varela Round', sans-serif;
+    --secondaryFont:'Montserrat', sans-serif;
+}
+
+.container{
+    height:auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid grey;
+}
+.items{
+    display:flex;
+}
+.items > a{
+    margin-left: 20px;
+    color: rgb(0,123,255);
+    padding:10px;
+    border-radius: 5px;
+    font-family:  var(--secondaryFont);
+    text-decoration: none;
+}
+.items>a:hover{
+    background-color:rgb(0,123,255);
+  
+    color:#fff;
+    cursor: pointer;
+}
+.brand{
+    font-size: 1.5vw;
+    margin-left: 10px;
+    font-family:  var(--primaryFont);
+    cursor: pointer;
+    text-decoration: none;
+}
+nav{
+    padding-bottom: 10px;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    display:grid;
+    justify-items: center;
+    background-color: rgb(232,236,239);
+    border-radius:20px;
+    font-family: var(--secondaryFont);
+}
+.items >a:nth-child(1){
+    color:white;
+    background-color:rgb(0,123,252);
+}
+.jumbotron >h1{
+    font-family: var(--primaryFont);
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom:0;
+}
+
+.jumbotron >p{
+    text-align: center;
+    width: 500px;
+}
+
+.jumbotron >button{
+    padding: 10px;
+    margin: 10px;
+    font-family: var(--secondaryFont);
+}
+.jumbotron >button:hover{
+    cursor: pointer;
+    background-color: rgb(58, 55, 55);
+}
+.signUp{
+    background-color:rgb(38,169,67);
+    outline:none;
+    border-radius:5px;
+    border:none;
+    color: white;
+}
+.launchDemo{
+    outline:none;
+    border-radius:5px;
+    border:none;
+    background-color:rgb(0,123,252) ;
+    color: white;
+}
+.sixGrid{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    
+}
+.sixGrid>div>p{
+    font-family: var(--secondaryFont);
+    font-size: 13px;
+}
+.sixGrid>div{
+    margin-left: 20px;
+}
+.sixGrid >div> h2{
+    font-family: var(--primaryFont);
+}
+.footer{
+    border-top: 2px solid grey;
+    font-family: var(--secondaryFont);
+}
+.footer>p{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.icon{
+    display: none;
+}
+.footer >p{
+    font-size: 1.5vw;
+}
+
+.slide > a{
+    
+    display:none;
+}
+
+@media only screen and  (max-width:1028px){
+    .items{
+        display:none;
+    }
+    .brand{
+        font-size: 2vw;
+    }
+    .icon{
+        display:inline-block;
+        position:relative;
+        margin-right: 20px;
+    }
+    .jumbotron >h1{
+        font-size: 4vw;
+    }
+    .jumbotron >p{
+        font-size: 1.5vw;
+        width:auto;
+    }
+    .jumbotron{
+       display:grid;
+       justify-content:center;
+    }
+    .container{
+     /* border: 2px solid orange; */
+     width: 50%;
+    }
+    .sixGrid>div >h2{
+        font-size: 2.2vw;
+    }
+    .sixGrid > div >p{
+        font-size: 1.2vw;
+    }
+    .jumbotron >p{
+        font-size: 1.5vw;
+        text-align: center;
+    }
+    .slide >a{
+        text-decoration: none;
+    font-size: 1.2rem;
+    color:rgb(0,123,252);
+    display: grid;
+    justify-content:center;
+    padding:10px;
+    
+    }
+   
+}
+@media only screen and (max-width:800px){
+    .icon{
+        font-size: 1rem;
+    }
+    .jumbotron{
+        display:grid;
+       justify-content:center;
+        
+    }
+    .container{
+        position: absolute;
+        left: 50%;
+        transform:translateX(-50%)
+    }
+    .jumbotron >h1{
+        font-size: 4vw;
+        text-align: center;
+    }
+    .jumbotron >p{
+        font-size: 1.5vw;
+        text-align: center;
+        width:auto;
+    }
+    .sixGrid{
+        display:grid;
+        grid-template-columns: auto;
+    }
+    button{
+        font-size:1.5vw;
+    }
+    
+}
+
+
+@media only screen and (max-width:500px){
+    .icon{
+        font-size: 0.7rem;
+    }
+    button{
+        font-size:1.5vw;
+    }
+    .jumbotron >h1{
+        font-size: 3vw;
+        text-align: center;
+    }
+}
